@@ -12,11 +12,16 @@
   </head>
   <body>
     <form>
-      <fieldset class="formField">
+      <fieldset class="formField" autocomplete="off">
         <legend>Personal information</legend>
         <label>
           <span>Surname:</span>
-          <input name="surname" type="text"></input>
+          <input 
+            name="surname" 
+            type="text" 
+            required
+          >
+          </input>
         </label>
         <label>
           <span>Name:</span>
@@ -42,7 +47,7 @@
           <input name="term" type="checkbox"></input>
         </label>
       </fieldset>
-      <fieldset  class="formField">
+      <fieldset  class="formField" autocomplete="off">
         <legend>Registration</legend>
         <label>
           <span>E-mail:</span>
@@ -59,7 +64,7 @@
           <input name="password" type="password"></input>
         </label>
       </fieldset>
-      <fieldset  class="formField">
+      <fieldset  class="formField" autocomplete="off">
         <legend>An interesting fact about you!</legend>
         <label class="radio">
           <span>Do you love cats?</span>
@@ -91,18 +96,23 @@
         <label>
           <span>How do you rate our work?</span>
           <input 
-            name="rate" 
+            name="range"
             type="range" 
             value="0"
           >
           </input>
         </label>
       </fieldset>
-      <fieldset  class="formField">
+      <fieldset  class="formField" autocomplete="off">
         <legend>Additional info:</legend>
         <label>
           <span>Comments:</span>
-          <textarea name="comments"></textarea>
+          <textarea 
+            name="comments" 
+            minlength="10" 
+            maxlength="200"
+          >
+          </textarea>
         </label>
         <label>
           <span>Would you recommend us?</span>
